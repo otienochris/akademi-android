@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/main_background.xml" value="0.324" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.4062863795110594" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.116" />
