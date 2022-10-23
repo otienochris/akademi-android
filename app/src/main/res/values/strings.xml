@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Akademi</string>
+    <string name="join_us_btn">Join Us</string>
+    <string name="join_us">Join Us</string>
+    <string name="have_account">You have an account? Login</string>
+    <string name="login">login</string>
+    <string name="title">Akademi</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_firstName">First Name</string>
+    <string name="hint_lastName">Last Name</string>
+    <string name="hint_country">Country of Origin</string>
+    <string name="hint_password1">Enter password</string>
+    <string name="hint_password2">Confirm Password</string>
+</resources>
