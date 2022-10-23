@@ -15,4 +15,7 @@
     <string name="dont_have_account">Create Account? Signup</string>
     <string name="txt_forgot_password">Forgot Password? change password</string>
     <string name="login_activity_title">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_change_password_title">Change Password</string>
 </resources>
