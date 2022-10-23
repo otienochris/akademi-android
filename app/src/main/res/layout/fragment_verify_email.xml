@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginFragment">
+    tools:context=".VerifyEmailFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,10 +12,10 @@
         android:layout_marginRight="10dp"
         >
         <TextView
-            android:id="@+id/tv_signTitle"
+            android:id="@+id/textView_verifyEmailTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_activity_title"
+            android:text="@string/fragment_verify_email_title"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:layout_centerHorizontal="true"
@@ -23,80 +23,69 @@
             android:textSize="40sp"
             />
         <com.google.android.material.divider.MaterialDivider
-            android:id="@+id/divider_signup"
+            android:id="@+id/divider_signup_verify_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_signTitle"
+            android:layout_below="@id/textView_verifyEmailTitle"
             android:layout_margin="10sp"
             />
 
         <TextView
-            android:id="@+id/textViewInLogin_fragmentDescription"
+            android:id="@+id/textView_verifyEmailDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_activity_description"
+            android:text="@string/fragment_verify_email_description"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:layout_centerHorizontal="true"
             android:textStyle="italic"
             android:textSize="20sp"
-            android:layout_below="@id/divider_signup"
+            android:layout_margin="20dp"
+            android:layout_below="@id/divider_signup_verify_email"
             />
         <!--TODO add start icons-->
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:id="@+id/txt_loginEmail"
+            android:id="@+id/inputInSignup_emailVerificationCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="@string/hint_email"
-            android:layout_below="@id/textViewInLogin_fragmentDescription"
+            android:hint="@string/hint_email_verification_code"
+            android:layout_below="@id/textView_verifyEmailDescription"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:id="@+id/btn_loginPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="@string/hint_password1"
-            android:layout_below="@id/txt_loginEmail"
-            >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:inputType="number"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btn_loginSubmit"
+            android:id="@+id/btnInSignup_verifyEmail"
             android:backgroundTint="@color/orange_red"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit"
-            android:layout_below="@id/btn_loginPassword"
+            android:text="@string/btn_txt_submit"
+            android:layout_below="@id/inputInSignup_emailVerificationCode"
             android:layout_centerHorizontal="true"
+            android:textSize="20sp"
             />
+
         <Button
-            android:id="@+id/btn_inLogin_ChangePassword"
+            android:id="@+id/btnInSignup_resendVerificationCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txt_forgot_password"
+            android:text="@string/txt_resend_verification_code"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:textColor="@color/smoky_black"
-            android:layout_below="@+id/btn_loginSubmit"
+            android:layout_below="@+id/btnInSignup_verifyEmail"
             android:layout_centerHorizontal="true"
 
             />

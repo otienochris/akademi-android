@@ -16,7 +16,7 @@
         android:src="@drawable/pexels___9223391" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
+        android:id="@+id/fragmentContainerViewInLogin"
         android:name="ke.or.explorersanddevelopers.LoginFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChangePasswordFragment">
+    tools:context=".SendEmailVerificationCodeFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:layout_marginBottom="20dp"
             android:layout_centerHorizontal="true"
             android:textStyle="bold"
-            android:textSize="20sp"
+            android:textSize="40sp"
             />
         <com.google.android.material.divider.MaterialDivider
             android:id="@+id/divider_signup"
@@ -28,6 +28,19 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_signTitle"
             android:layout_margin="10sp"
+            />
+        <TextView
+            android:id="@+id/textViewInLogin_sendVerificationCodeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_email_verification_code"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/divider_signup"
             />
         <!--TODO add start icons-->
         <com.google.android.material.textfield.TextInputLayout
@@ -37,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="@string/hint_email"
-            android:layout_below="@id/divider_signup"
+            android:layout_below="@id/textViewInLogin_sendVerificationCodeTitle"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -48,13 +61,13 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btn_loginSubmit"
+            android:id="@+id/btnInChangePass_submit"
             android:backgroundTint="@color/orange_red"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit"
+            android:text="@string/btn_txt_submit"
             android:layout_below="@id/input_changePasswordEmail"
             android:layout_centerHorizontal="true"
             />

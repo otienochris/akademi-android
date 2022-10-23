@@ -8,7 +8,11 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.4062863795110594" />
         <entry key="app/src/main/res/layout/fragment_change_password.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_email_verification_code.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_signup.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/fragment_submit_new_password.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_verify_email.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.116" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>

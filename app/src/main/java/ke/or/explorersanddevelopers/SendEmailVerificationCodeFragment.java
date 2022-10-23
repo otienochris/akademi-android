@@ -10,9 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class LoginFragment extends Fragment {
+public class SendEmailVerificationCodeFragment extends Fragment {
 
-    private Button btnInLogin_ChangePassword;
+    private Button submit;
+
+    public SendEmailVerificationCodeFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,18 +27,17 @@ public class LoginFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_login, container, false);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_send_email_verification_code, container, false);
+        submit = view.findViewById(R.id.btnInChangePass_submit);
 
         FragmentManager fragmentManager = getParentFragmentManager();
 
-        btnInLogin_ChangePassword = view.findViewById(R.id.btn_inLogin_ChangePassword);
-
-        
-        btnInLogin_ChangePassword.setOnClickListener(v -> {
+        submit.setOnClickListener(v -> {
             fragmentManager.beginTransaction()
                     .setReorderingAllowed(true)
-                    .replace(R.id.fragmentContainerViewInLogin, SendEmailVerificationCodeFragment.class, null)
-                    .addToBackStack("ChangePassword")
+                    .replace(R.id.fragmentContainerViewInLogin, SubmitNewPasswordFragment.class, null)
+                    .addToBackStack("SubmitNewPasswordFragment")
                     .commit();
         });
 
